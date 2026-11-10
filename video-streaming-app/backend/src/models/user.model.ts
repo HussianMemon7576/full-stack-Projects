@@ -4,7 +4,6 @@ const userSchema = new mongoose.Schema(
     {
         username : {
             type : String,
-            required: true,
             unique : true,
             trim : true
         } ,
@@ -30,7 +29,6 @@ const userSchema = new mongoose.Schema(
 
         avatar : {
             type : String,
-            required : true
         },
         coverImage : {
             type : String,

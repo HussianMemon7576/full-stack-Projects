@@ -9,3 +9,5 @@ function generateAccessToken(id:mongoose.Schema.Types.ObjectId,sessionid :mongoo
 function generateRefreshToken(id:mongoose.Schema.Types.ObjectId){
     return jwt.sign({id : id},Config.REFRESH_Token_Secret,{expiresIn : Config.REFRESH_TOKEN_expiry})
 }
+
+export {generateAccessToken,generateRefreshToken}

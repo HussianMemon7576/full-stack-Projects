@@ -5,3 +5,9 @@ export type AsyncFunction = (
     res: Response,
     next: NextFunction
 ) => Promise<any>;
+
+
+export interface UploadOptionsTOCLOUDINARY {
+  resourceType: "image" | "video";
+  folder: string;
+}
